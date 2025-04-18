@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header h2{
+    text-align: center;
+    font-size: 40px;
+    color: darkgreen;
+}
+header img{
+    position: relative;
+    width: 800px;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+}
+.trabaja1{
+    display: flex;
+}
+.texto h2{
+    font-size: 50px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texto p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    padding: 20px;
+}
+.trabaja1 img{
+    position: relative;
+    width: 700px;
+}
+.trabaja2{
+    display: flex;
+}
+.beneficios h2{
+    font-size: 50px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.beneficios li > h3{
+    font-size: 25px;
+    padding: 0px 20px;
+}
+.beneficios li > p{
+    padding: 20px 20px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.trabaja2 .img{
+    display: block;
+    position: relative;
+    padding: 30px;
+}
+.final h2{
+    text-align: center;
+    font-size: 45px;
+    background-color: rgb(248, 221, 186);
+}
+.final1 .buton{
+    text-align: center;
+}
+.button{
+    background-color: aquamarine;
+    margin: 20px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+.button a{
+    text-decoration: none;
+    padding: 39px;
+    color: rgb(11, 12, 12);
+}
+.button:hover{
+    background-color: rgba(82, 82, 219, 0.644);
+}

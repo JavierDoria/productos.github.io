@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+a{ text-decoration: none;
+    color: aliceblue;}
+h2{font-size: 50px;}
+/*em  es una unidad que depende del elemento del contenedor*/
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+.producto >  button{
+    position: absolute;
+    bottom: 3%;
+    transform: translateX(-100px);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0,0,0.5);
+    box-shadow: 2px 2px 10px  rgba(0, 0,0,0.5);
+    color: rgb(255, 254, 254);
+    background-color: rgb(48, 150, 73);
+    width: 200px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*header*/
+header{
+    background-color: rgb(241, 241, 241);
+}
+header .logo{
+    padding: 5px 5px;
+    width: 100px;
+    border-radius: 50px;
+}
+header .tienda{
+    padding: 20px 5px;
+    width: 70px;
+    left: 700px;
+    position: relative;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(10, 129, 16);
+
+}
+header a:hover{
+    color: rgb(15, 241, 72);
+}
+/*-------------------banner-----------*/
+#banner{
+    display: flex;
+    text-align: center;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(53, 94, 61, 0.404),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("https://www.jimarestanterias.com/wp-content/uploads/2018/03/mobiliario-de-farmacia-4.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+#banner p{
+    color: rgb(239, 247, 247);
+}
+#banner h2{
+    color:  rgb(8, 156, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.color-acento{
+    color: rgba(2, 251, 12, 84%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* -------------------------estilo Productos-----------------------*/
+button:hover{
+    background-color: rgb(5, 255, 17);
+}
+#estilo_productos{
+    color: rgb(255, 255, 255);
+    text-align:center ;
+}
+#estilo_productos .container{
+    padding: 15px 0px;
+}
+#estilo_productos h2{
+    margin-top: 0;
+    font-size: 3em ;
+    color: rgb(10, 10, 10);
+}
+#estilo_productos p{
+    display: none;
+}
+#estilo_productos a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#estilo_productos .producto{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius:15px ;
+    position: relative;
+}
+/*------------------IMAGENES DE PRODUCTOS---------------------*/
+.producto:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(204, 200, 200, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed1.png);
+
+}
+.producto:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(192, 186, 186, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed2.png);
+}
+.producto:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(185, 183, 183, 0.5),
+        rgba(15, 15, 15, 0.5)
+    )
+    ,url(imgMed3.png);
+    
+}
+.producto:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed4.png);
+}
+.segunda > .producto:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed5.png);
+}
+.segunda > .producto:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed5.png);
+}
+.segunda > .producto:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed4.png);
+}
+.segunda > .producto:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMed4.png);
+}
+/*--------------------CONVENIOS--------------*/
+
+#nuestros_socios{
+    color: rgb(255, 255, 255);
+    text-align:center ;
+}
+#nuestros_socios .container{
+    padding: 15px 0px;
+}
+#nuestros_socios h2{
+    margin-top: 0;
+    font-size: 3em ;
+    color: rgb(0, 0, 0);
+}
+
+#nuestros_socios .convenio{
+    border-radius: 20px;
+    width: 200px;
+    background-size: cover;
+    height: 210px;
+}
+#nuestros_socios .convenio > button{
+    width: 140px;
+    
+}
+
+/*------------------button--------------*/
+.programas  button{
+    position: absolute;
+    bottom: 8%;
+    transform: translateX(-65px);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0,0,0.5);
+    box-shadow: 2px 2px 10px  rgba(0, 0,0,0.5);
+    color: rgb(255, 254, 254);
+    background-color: rgb(48, 150, 73);
+    width: 150px;
+}
+.programas button:hover{
+    background-color: rgb(5, 255, 17);
+}
+/*-----------------seccion de convenios imagenes-----------*/
+
+.convenio:first-child{
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(204, 200, 200, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMarca1.png);
+
+}
+.convenio:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(192, 186, 186, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMarca2.png);
+}
+.convenio:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(185, 183, 183, 0.5),
+        rgba(15, 15, 15, 0.5)
+    )
+    ,url(imgMarca3.png);
+    
+}
+.convenio:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(196, 193, 193, 0.692),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imgMarca4.png);
+}
+
+
+#video{
+    padding: 30px;
+}
+/*--------------------Footer-----------*/
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:  rgba(30, 30,30);
+    color: aliceblue;
+    height: 40vh;
+}
+#footer .final-izquierdo{
+    width: 400px;
+}
+#footer h4{
+    font-family: serif;
+    font-size: 25px;
+    color: chartreuse;
+}
+#footer .final-centro{
+    text-align: center ;
+    font-size: 12.5px;
+    width: 400px;
+}
+#footer a:hover{
+    color: brown;
+}
+#footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
+
+
+
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom:0;
+        padding-right: 20px;
+    }
+    #estilo_productos .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #estilo_productos .segunda{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros_socios .programas{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    #estilo_productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #estilo_productos h3{
+        margin-top: 0;
+    }
+    #estilo_productos .carta{
+        padding: 50px;
+    }
+
+    }
+    
